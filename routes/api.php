@@ -13,6 +13,25 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:api')->group(function(){
+    Route::get('/user', 'UsersController@me');
+});
+
+Route::prefix('/products')->group(function(){
+    Route::get('', 'ProductsController@index');
+    Route::get('/{id}', 'ProductsController@product');
+});
+Route::prefix('/billings')->group(function () {
+    Route::get('', 'BillingsController@index');
+});
+
+Route::prefix('/shippings')->group(function () {
+    Route::get('', 'ShippingsController@index');
+});
+Route::prefix('/clients')->group(function () {
+    Route::get('', 'UsersController@index');
+});
+
+Route::prefix('/tasks')->group(function () {
+    Route::get('', 'TasksController@index');
 });
