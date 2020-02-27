@@ -10,7 +10,7 @@ class ProductsController extends Controller
     public function index()
     {
         $output = [
-		  ['$key'=> 'dgytrrsd',
+		  [
 		  		  'productId'=> 2435,
 		  		  'productName'=> 'Sleaveless Top',
 		  		  'productCategory'=> 'tops',
@@ -22,7 +22,7 @@ class ProductsController extends Controller
 		  		  'ratings'=> 5,
 		  		  'favourite'=> false,
 		  		  'productSeller'=> 'Google'],
-		  		  ['$key'=> 'dgytrrsdrti',
+		  		  [
 		  		  'productId'=> 24355,
 		  		  'productName'=> 'Sleaveless Top',
 		  		  'productCategory'=> 'tops',
@@ -34,7 +34,7 @@ class ProductsController extends Controller
 		  		  'ratings'=> 5,
 		  		  'favourite'=> true,
 		  		  'productSeller'=> 'Google'],
-		  		  ['$key'=> 'dgytrrsdrtd',
+		  		  [
 		  		  'productId'=> 24355,
 		  		  'productName'=> 'Sleaveless Top',
 		  		  'productCategory'=> 'tops',
@@ -46,7 +46,7 @@ class ProductsController extends Controller
 		  		  'ratings'=> 5,
 		  		  'favourite'=> true,
 		  		  'productSeller'=> 'Google'],
-		  		  ['$key'=> 'dgytrrsdrth',
+		  		  [
 		  		  'productId'=> 24355,
 		  		  'productName'=> 'Sleaveless Top',
 		  		  'productCategory'=> 'tops',
